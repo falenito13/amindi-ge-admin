@@ -1,5 +1,11 @@
 <?php
 
+Route::prefix('employee')->group(function(){
+   Route::get('/work-status','EmployeeController@workStatus');
+   Route::post('/check-in','EmployeeController@checkIn');
+   Route::post('/check-out','EmployeeController@checkOut');
+});
+
 Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', 'middleware' => ['auth:api']], function () {
     // Permissions
     Route::apiResource('permissions', 'PermissionsApiController');

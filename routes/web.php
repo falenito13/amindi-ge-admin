@@ -1,5 +1,7 @@
 <?php
 
+use App\CheckIn;
+
 Route::redirect('/', '/login');
 Route::get('/home', function () {
     if (session('status')) {
@@ -45,4 +47,9 @@ Route::group(['prefix' => 'profile', 'as' => 'profile.', 'namespace' => 'Auth', 
         Route::get('password', 'ChangePasswordController@edit')->name('password.edit');
         Route::post('password', 'ChangePasswordController@update')->name('password.update');
     }
+});
+
+Route::get('/test',function(){
+    $checkIn = CheckIn::with('checkOut')->latest()->where('name', 'david')->first();
+    dd($checkIn);
 });

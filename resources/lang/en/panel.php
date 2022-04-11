@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'site_title' => 'Amindi-Ge',
+    'site_title' => 'HR Management System',
 ];
