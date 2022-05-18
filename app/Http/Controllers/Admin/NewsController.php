@@ -14,6 +14,7 @@ use App\Project;
 use App\User;
 use Gate;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\Str;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -22,6 +23,8 @@ class NewsController extends Controller
     public function index()
     {
         $news = News::all();
+        Redis::set('news',$news,'EX',1800);
+        dd(json_decode(Redis::get('news')),News::all());
         return view('admin.news.index', compact('news'));
     }
 
