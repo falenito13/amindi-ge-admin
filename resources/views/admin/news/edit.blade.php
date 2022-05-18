@@ -32,6 +32,14 @@
                 <span class="block">{{ trans('cruds.news.fields.description_helper') }}</span>
             </div>
             <div class="mb-3">
+                <label for="top_news" class="text-xs ">Top სიახლე</label>
+                <div>
+                    <input type="checkbox" @if($news->top_news) checked @endif style="width: 16px; height: 16px;"
+                           id="top_news"
+                           name="top_news" value="{{old('top_news',1)}}">
+                </div>
+            </div>
+            <div class="mb-3">
                 <label for="photo" class="text-xs required">{{ trans('cruds.news.fields.photo') }}</label>
 
                 <div class="form-group">

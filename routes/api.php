@@ -22,4 +22,6 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
 Route::prefix('v1')->namespace('Api\V1')->group(function () {
     Route::get('/all-news','ApiController@allNews');
     Route::get('/news','ApiController@news');
+    Route::get('/top-news','ApiController@topNews');
+    Route::get('/main-news','ApiController@mainPage');
 });

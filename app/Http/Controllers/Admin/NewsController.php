@@ -38,7 +38,8 @@ class NewsController extends Controller
             News::create([
                 'title' => $request->title,
                 'description' => $request->description,
-                'photo' => 'images/' . $img
+                'photo' => 'images/' . $img,
+                'top_news' => $request->top_news
             ]);
         }
         return redirect()->route('admin.news.index');
@@ -56,13 +57,15 @@ class NewsController extends Controller
             $news->update([
                 'title' => $request->title,
                 'description' => $request->description,
-                'photo' => 'images/' . $img
+                'photo' => 'images/' . $img,
+                'top_news' => $request->top_news
             ]);
         }
         else {
             $news->update([
                 'title' => $request->title,
                 'description' => $request->description,
+                'top_news' => $request->top_news
             ]);
         }
         return redirect()->route('admin.news.index');
