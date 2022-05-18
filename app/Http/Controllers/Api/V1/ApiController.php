@@ -29,6 +29,6 @@ class ApiController extends Controller
 
     public function topNews() : Response
     {
-        return response(News::where('top','=',1)->orderByDesc('id')->paginate(16));
+        return response(News::where('top_news','=',1)->orderByDesc('id')->paginate(16));
     }
 }
