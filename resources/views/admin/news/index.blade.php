@@ -12,7 +12,7 @@
 
     <div class="body">
         <div class="w-full">
-            <table class="stripe hover bordered datatable datatable-news">
+            <table class="stripe hover bordered datatable datatable-news" style="width: 100% !important;">
                 <thead>
                     <tr>
                         <th width="10">

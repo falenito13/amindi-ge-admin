@@ -14,7 +14,7 @@
 
     <div class="body">
         <div class="w-full">
-            <table class="stripe hover bordered datatable datatable-User">
+            <table class="stripe hover bordered datatable datatable-User" style="width: 100% !important;">
                 <thead>
                     <tr>
                         <th width="10">
@@ -139,7 +139,7 @@
       $($.fn.dataTable.tables(true)).DataTable()
           .columns.adjust();
   });
-  
+
 })
 
 </script>
