@@ -4,8 +4,8 @@
 /storage/*.key
 /public/images
 /public/mix-manifest.json
-/public/css
-/public/js
+/public/css/app.css
+/public/js/app.js
 /vendor
 /.idea
 .env
