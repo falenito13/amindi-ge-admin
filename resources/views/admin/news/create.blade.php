@@ -23,7 +23,9 @@
                 <label for="description" class="text-xs required">{{ trans('cruds.news.fields.description') }}</label>
 
                 <div class="form-group">
-                    <input type="text" id="description" name="description" class="{{ $errors->has('description') ? ' is-invalid' : '' }}" value="{{ old('description') }}">
+                    <textarea id="description" name="description" class="{{ $errors->has('description') ? ' is-invalid' : '' }} description">
+                        {!! old('description') !!}
+                    </textarea>
                 </div>
                 @if($errors->has('description'))
                     <p class="invalid-feedback">{{ $errors->first('description') }}</p>
