@@ -84,6 +84,7 @@ $(document).ready(function () {
     }
     tinymce.init({
         selector: '.description',
-        height: 150
+        height: 150,
+        plugins: ['paste', 'link', 'autoresize','preview','fullscreen','wordcount','media']
     });
 })

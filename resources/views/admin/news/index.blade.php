@@ -22,7 +22,7 @@
                             {{ trans('cruds.news.fields.title') }}
                         </th>
                         <th>
-                            {{ trans('cruds.news.fields.description') }}
+                            { trans('cruds.news.fields.description') }}
                         </th>
                         <th>
                             {{ trans('cruds.news.fields.photo') }}
@@ -40,7 +40,7 @@
                                 {{ $new->title ?? '' }}
                             </td>
                             <td class="text-center">
-                                {{ $new->description ?? '' }}
+                                {!!  $new->description ?? '' !!}
                             </td>
                             <td class="flex justify-center">
                                 <img id="preview" src="{{asset('/' .$new->photo)}}" height="30" width="30"/>
