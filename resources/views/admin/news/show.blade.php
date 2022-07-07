@@ -26,7 +26,7 @@
                         {{ trans('cruds.news.fields.description') }}
                     </th>
                     <td>
-                        {{ $news->description }}
+                        {!!  $news->description !!}
                     </td>
                 </tr>
                 <tr>
