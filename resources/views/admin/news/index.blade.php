@@ -22,7 +22,7 @@
                             {{ trans('cruds.news.fields.title') }}
                         </th>
                         <th>
-                            { trans('cruds.news.fields.description') }}
+                            {{ trans('cruds.news.fields.description') }}
                         </th>
                         <th>
                             {{ trans('cruds.news.fields.photo') }}
