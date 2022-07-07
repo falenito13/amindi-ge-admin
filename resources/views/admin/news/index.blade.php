@@ -40,7 +40,7 @@
                                 {{ $new->title ?? '' }}
                             </td>
                             <td class="text-center">
-                                {!!  \Illuminate\Support\Str::of($new->description,)->limit()!!}
+                                {!!  \Illuminate\Support\Str::of($new->description,)->limit(200)!!}
                             </td>
                             <td class="flex justify-center">
                                 <img id="preview" src="{{asset('/' .$new->photo)}}" height="30" width="30"/>
