@@ -22,9 +22,6 @@
                             {{ trans('cruds.news.fields.title') }}
                         </th>
                         <th>
-                            {{ trans('cruds.news.fields.description') }}
-                        </th>
-                        <th>
                             {{ trans('cruds.news.fields.photo') }}
                         </th>
                         <th>
@@ -38,9 +35,6 @@
                             <td></td>
                             <td class="text-center">
                                 {{ $new->title ?? '' }}
-                            </td>
-                            <td class="text-center">
-                                {!!  \Illuminate\Support\Str::of($new->description,)->limit(200)!!}
                             </td>
                             <td class="flex justify-center">
                                 <img id="preview" src="{{asset('/' .$new->photo)}}" height="30" width="30"/>
