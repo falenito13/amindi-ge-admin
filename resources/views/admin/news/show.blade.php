@@ -13,24 +13,24 @@
         </div>
         <table class="striped bordered show-table">
             <tbody>
-                <tr>
-                    <th>
+                <tr style="border-bottom: 1px solid black;">
+                    <th style="border-right: 1px solid black;">
                         {{ trans('cruds.news.fields.title') }}
                     </th>
                     <td>
                         {{ $news->title }}
                     </td>
                 </tr>
-                <tr>
-                    <th>
+                <tr style="border-bottom: 1px solid black;">
+                    <th style="border-right: 1px solid black;">
                         {{ trans('cruds.news.fields.description') }}
                     </th>
                     <td>
                         {!!  $news->description !!}
                     </td>
                 </tr>
-                <tr>
-                    <th>
+                <tr style="border-bottom: 1px solid black;">
+                    <th style="border-right: 1px solid black;">
                         {{ trans('cruds.news.fields.photo') }}
                     </th>
                     <td>
